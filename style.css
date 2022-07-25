@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    
+font-family: "Poppins", sans-serif;
+overflow: hidden;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li{
+    padding: 15px 20px 15px;
+    list-style-type: none;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.logo h2{
+    font-size: 2rem;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo svg{
+    margin-right: 10px;
+}
+
+.text{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.text p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.text h2{
+    font-size: 4rem;
+    
+}
+
+.btn{
+    background: none;
+    border: none;
+ 
+    margin-top: 15px;
+    margin-right: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.product img{
+    width: 500px;
+    height: 500px;
+    /* animation: fly 4s ease-in-out infinite; */
+}
+.product{
+    position: absolute;
+    z-index: -10;
+    top: 65%;
+    left: 50%;
+    display: flex;
+    animation: fly 4s ease-in-out infinite;
+
+}
+
+
+@keyframes fly {
+    0% {
+          transform: translate(-50%, -46%);
+    }
+
+    50% {
+          transform: translate(-50%, -54%);
+    }
+
+    100% {
+          transform: translate(-50%, -46%);
+    }
+}
